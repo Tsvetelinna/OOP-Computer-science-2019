@@ -1,4 +1,4 @@
-#include <iostream>
+#pragma once
 #include <string>
 using namespace std;
 
@@ -9,25 +9,14 @@ private:
 public:
 	Pizza(const string type = "N/A",
 		const int weight = 450, const int parts = 8, 
-		const double price = 6.5) : Food(weight, parts, price){
+		const double price = 6.5);
 
-		this->type = type;
-	}
+	void print();
 
-	void print() {
+	void category();
 
-		Food::print();
-
-		cout << "Type: " << type << endl;
-	}
-
-	void category() {
-
-		cout << "PIZZA" << endl;
-	}
-
-	Food* clone() {
-
-		return new Pizza(*this);
-	}
+	Food* clone();
 };
+
+
+#include "pizza.cpp"

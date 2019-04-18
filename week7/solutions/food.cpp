@@ -2,8 +2,8 @@
 #include <cassert>
 using namespace std;
 
-Food::Food(const int weight = 0, const int parts = 0,
-		const double price = 0.0) {
+Food::Food(const int weight, const int parts,
+		const double price) {
 
 	assert(weight > 0);
 	assert(parts > 0);

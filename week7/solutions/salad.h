@@ -1,5 +1,4 @@
-#include <iostream>
-using namespace std;
+#pragma once
 
 class Salad : public Food {
 private:
@@ -7,26 +6,15 @@ private:
 	bool isSpiced;
 
 public:
-	Salad(const int productsCount = 4, const bool isSpiced = true, const int weight = 300, const int parts = 1, 
-		const double price = 4.5) : Food(weight, parts, price) {
+	Salad(const int productsCount = 4, const bool isSpiced = true, 
+		const int weight = 300, const int parts = 1, 
+		const double price = 4.5);
 
-		this->productsCount = productsCount;
-		this->isSpiced = isSpiced;
-	}
+	virtual void category();
 
-	virtual void category() {
+	virtual Food* clone();
 
-		cout << "SALAD" << endl;
-	}
-
-	virtual Food* clone() {
-        return new Salad(*this);
-    }
-
-    void print() {
-
-    	Food::print();
-    	cout << "Product count: " << productsCount << endl;
-    	cout << "Spiced: " << boolalpha << isSpiced << endl;
-    }
+    void print();
 };
+
+#include "salad.cpp"

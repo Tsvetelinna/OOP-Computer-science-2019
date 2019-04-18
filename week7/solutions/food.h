@@ -8,8 +8,8 @@ private:
 	double weightPerPart;
 
 public:
-	Food(const int weight, const int parts,
-		 const double price);
+	Food(const int weight = 0, const int parts = 0,
+		const double price = 0.0);
 
 	virtual void category() = 0;
 
