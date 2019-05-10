@@ -1,0 +1,32 @@
+RubberDuck
+21
+35
+dark green
+1
+9
+
+RubberDuck
+19
+30
+blue
+1
+2
+
+RealDuck
+10
+11
+yellow
+2
+ducky
+
+PlasticDuck
+1
+2
+yellow
+256
+
+PlasticDuck
+3
+4
+my fancy invented color
+123456789
